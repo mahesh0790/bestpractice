@@ -95,10 +95,16 @@
           <url>scp://site@svn.sonatype.com/home/site/books/mvnex-book-stage/book-examples/</url>
         </site>
         </distributionManagement>
-      </profile>
+	<distributionManagement>
+		<repository>
+			<id>mahesh</id>
+			<name>mahesh</name>
+			<url>http://localhost:8081/nexus/content/repositories/mahesh/</url>
+		</repository>
+</distributionManagement>
+</profile>
   </profiles>
-
-  <reporting>
+<reporting>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
